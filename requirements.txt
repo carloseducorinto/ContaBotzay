@@ -1,0 +1,9 @@
+streamlit==1.32.0
+langgraph>=0.3.31
+langchain>=0.3.23
+langchain-core>=0.3.54
+langchain-openai>=0.3.14
+langchain-groq>=0.3.2
+python-dotenv==1.0.1
+beautifulsoup4==4.12.3
+requests==2.31.0

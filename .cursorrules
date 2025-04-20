@@ -1,0 +1,29 @@
+rules:
+  - match: "*"
+    description: |
+      Maintain the following structured and modular project organization, clearly separating the LangGraph agents, Streamlit UI, prompts, and environment configurations:
+
+      📁 Contabilizei_Chatbot/
+      ├── manager/
+      │   └── agent_manager.py        # Manages and delegates agent execution based on user input
+      │
+      ├── agents/
+      │   ├── welcome_agent.py        # Handles initial user greeting and onboarding
+      │   └── websearch_agent.py      # Performs live website searches to answer user queries
+      │
+      ├── prompts/
+      │   ├── welcome.prompt          # Prompt template for welcoming users
+      │   └── websearch.prompt        # Prompt template for retrieving website information
+      │
+      ├── ui/
+      │   └── streamlit_app.py        # Streamlit application providing a ChatGPT-like user interface
+      │
+      ├── utils/
+      │   └── webscraper.py           # Utility functions for fetching and parsing content from Contabilizei website
+      │
+      ├── .env                        # Environment variables (e.g., API keys, URLs)
+      ├── .cursorrules                # Rules enforcing this project structure
+      └── main.py                     # Entry point for launching LangGraph integration or CLI commands
+
+    suggest: |
+      Always encapsulate each LangGraph agent into its dedicated Python file under the 'agents' folder, maintain clear separation of concerns, and modularize reusable functions within the 'utils' directory.
